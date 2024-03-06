@@ -1,0 +1,167 @@
+.formContainer{
+    height: 551px;
+    
+}
+
+.loginBtn{
+    text-align: start;
+    padding-bottom: 76px;
+    font-size: 18px;
+}
+
+.formTwo,.formThree, .formFour{
+    right: -40rem;
+    transition: 0.5s !important;
+}
+
+.signInBtn button{
+    font-size: 18px;
+}
+
+.loginBtn p{
+    font-size: 16px;
+}
+
+.day{
+    width: 92px;
+    position: relative;
+}
+
+.month{
+    width: 213px;
+    position: relative;
+}
+
+.year{
+    width: 194px;
+    position: relative;
+}
+
+.message{
+    display: none;
+}
+
+.footer{
+    margin-top: 4rem;
+    gap: 174px;
+    font-size: medium;
+}
+
+@media(max-width:1440px){
+    .logoContainer{
+        margin-inline: 99px;
+        margin-bottom: 75px;
+    }
+    .logo{
+        font-size: 30px;
+        height: 48px;
+        padding-inline: 15px;
+    }
+
+    .logoSpan{
+        font-size: 12px;
+    }
+
+    .formContainer{
+        width: 854px;
+        height: 390px;
+        
+    }
+
+    .loginContainer{
+        width: 421px;
+    }
+
+     .formOne{
+        padding-block: 10px;
+        transition: 0.5s !important;
+    }
+
+
+    .formHeader{
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    .formHeader i{
+        position:absolute;
+        right: 1rem;
+        font-size:22px
+    }
+
+    .loginHeader{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .loginHeader i{
+        position:absolute;
+        right: 1rem;
+        font-size:22px
+    }
+
+    .formHeader h2{
+        font-size: 18px;
+    }
+
+    .inputContainer input{
+        font-size: 12px;
+        padding-block: 13px;
+    }
+
+    .inputContainer button{
+        font-size: 18px;
+        padding-block: 11px;
+        width: 117px;
+        
+    }
+
+    .smTxt{
+        font-size:15px;
+    }
+
+    .datTxt{
+        font-size: 12px;
+    }
+
+    .rightCard{
+        padding-inline: 75px;
+    }
+
+    .rightCard h4{
+        font-size: 24px;
+    }
+
+    .rightCard p{
+        font-size: 12px;
+    }
+
+    .rightCard button{
+        font-size: 18px;
+        padding-block: 11px;
+        width: 117px;
+    }
+
+    .message{
+        height: 356px;
+    }
+
+    .message p{
+        font-size: 24px;
+    }
+
+    .message h3{
+        font-size: 30px;
+    }
+
+    .messageLogo{
+        font-size: 18px;
+    }
+
+   
+
+    .loginBtn p{
+        font-size: 12px;
+    }
+
+}

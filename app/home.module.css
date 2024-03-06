@@ -1,0 +1,202 @@
+.headline{
+    background-image: url("./images/Vector.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.laptop{
+    background-image: url("./images/laptop.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.profile{
+    background-image: url("./images/profile.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 200;
+}
+
+.group{
+    background-image: url("./images/group.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100%;
+    z-index: 150;
+}
+
+.footer span{
+    z-index: 1000 !important;
+}
+
+.mobile{
+    background-image: url("./images/iPhone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.frameIcon{
+    background-image: url("./images/Frame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.solutionCard{
+    box-shadow: 0px 8px 16px -5px;
+}
+
+ @media (max-width:1440px){
+    .headline{
+        padding-bottom: 16.5rem;
+    }
+
+.headline p{
+    font-size: 24px;
+    width: 392px;
+}
+
+.headline button{
+    width: 226px;
+    font-size: 18px;
+}
+
+.span{
+    font-size: 12px;
+    width: 187px;
+}
+
+.footer{
+    font-size: 12px;
+    bottom: 0;
+    right:10%
+}
+
+
+
+
+.profile{
+    right: 28.5%;
+}
+
+.group{
+    right: 40% ;
+}
+
+}
+
+.serviceContainer span{
+    font-size: 15px;
+}
+
+.serviceHd p{
+    font-size: 24px;
+}
+
+.serviceHd h6{
+    font-size: 15px;
+}
+
+.serviceCard{
+    width: 338px;
+    height: 294px;
+}
+
+.serviceCard p{
+    font-size: 24px;
+}
+
+.serviceCard span{
+    font-size: 12px;
+}
+
+.mobile{
+    width: 507px;
+    height: 507px;
+}
+
+.mobileContainer span{
+    width: 444px;
+    font-size: 15px;
+}
+
+.frequency p{
+    font-size: 30px;
+}
+
+.smTxt{
+    font-size: 18px;
+}
+
+.frameIcon{
+    width:540px;
+    height: 294px;
+}
+
+.solutionCnt p{
+    font-size:18px
+}
+
+.solutionCnt span{
+    font-size: 12px
+}
+
+.solutionCard{
+    width:194px;
+    height: 228px;
+    padding-top: 4rem
+}
+
+.contacts p{
+    font-size: 15px;
+}
+
+.contacts span{
+    font-size: 12px;
+}
+
+.contactIcons{
+    font-size:37px
+}
+@media(max-width:1045px){
+    .headline{
+        padding-top: 12rem;
+        padding-bottom: 7.3rem;
+        gap: 2rem;
+    }
+
+    .headline p{
+        font-size: 24px !important;
+        width: 387px;
+    }
+
+    .laptop{
+        width: 601px;
+        top: 200px;
+    }
+
+    .profile{
+        width: 200px;
+        height: 200px;
+        right: 34% !important;
+        /* left: 500px; */
+        top:197px
+    }
+    
+    .group{
+        /* left: 440px ; */
+        top: 370px;
+        width: 145px;
+        height: 120px;
+        right: 45%;
+    }
+}
