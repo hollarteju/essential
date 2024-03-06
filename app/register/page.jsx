@@ -44,7 +44,7 @@ const Register = ()=>{
                 <span class={`${style.logoSpan} text-[#4772E2] text-[16px]`}>Essential Mail</span>
             </div>
         
-            
+        <div class={`${style.registerContainer}`}>
         <div id='form-container' className={`${style.formContainer} grid md:grid-cols-2 items-center overflow-hidden md:h-551 max-w-[1139px] mx-auto`}>
                 <div className="relative items-center h-full w-full overflow-hidden contents-center">
                 
@@ -189,7 +189,9 @@ const Register = ()=>{
                     </div>
                 </div>
             </div>
+        </div>
             <Footer/>
+            
     </div>
     )
 }

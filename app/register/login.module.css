@@ -165,3 +165,17 @@
     }
 
 }
+
+@media(max-width:1045px){
+    .loginContainer{
+        padding-block: 35%;
+        height: 85vh !important;
+    }
+
+    .registerContainer{
+        padding-block: 35%;
+        height: 82vh !important;
+    }
+
+    
+}
