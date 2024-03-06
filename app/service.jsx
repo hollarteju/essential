@@ -94,8 +94,8 @@ export default function Service(){
                     <p className="text-center text-[40px] font-[900]">Frequentlly asked question</p>
                     <div class="flex justify-between w-full items-center">
                         <div class="lg:w-[552px] flex flex-col gap-[4rem] pb-[100px]">
-                            {frequency.map((x)=>(
-                                <div key={x.number} class={`${style.smTxt} flex text-[24px] font-[500] items-center gap-[1rem]`}>
+                            {frequency.map((x, index)=>(
+                                <div key={index} class={`${style.smTxt} flex text-[24px] font-[500] items-center gap-[1rem]`}>
                                 <FaPlusSquare size="24px" />
                                 <span>{x.text}</span>
                             </div>
@@ -112,8 +112,8 @@ export default function Service(){
                     <p>Other Essential Solutions</p>
                 </div>
                 <div class="flex text-center gap-[30px]">
-                    {solution.map((x)=>(
-                        <div key={x.number} className={`${style.solutionCard} flex flex-col gap-[2rem] px-[0.5rem] pt-[6rem] lg:w-[259px] lg:h-[305px] rounded-[10px] bg-[#F5F5F5]`}>
+                    {solution.map((x, index)=>(
+                        <div key={index} className={`${style.solutionCard} flex flex-col gap-[2rem] px-[0.5rem] pt-[6rem] lg:w-[259px] lg:h-[305px] rounded-[10px] bg-[#F5F5F5]`}>
                             <p className="text-[24px] font-[700] text-[#333333]">{x.headline}</p>
                             <span className="text-[16px] font-[500]">
                                 Lorem ipsum dolor sit amet consectetur. At diam et
@@ -133,11 +133,11 @@ export default function Service(){
                               platforms quickly from one place.
                         </span>
                     </div>
-                    {contacts.map((items)=>(
-                    <div key={items.number} className="flex flex-col">
+                    {contacts.map((items, index)=>(
+                    <div key={index} className="flex flex-col">
                         <p className="text-[20px] font-[700] mb-[1rem]">{items.headline}</p>
-                        {items.links.map((x)=>(
-                        <div key={items.number} className="flex flex-col pb-[0.4rem]">
+                        {items.links.map((x, number)=>(
+                        <div key={number} className="flex flex-col pb-[0.4rem]">
                             <span className="text-[16px] font-[400]" key={index}><Link href="#">{x}</Link></span>
                          </div>
                         ))}
@@ -145,8 +145,8 @@ export default function Service(){
                     ))}
                     <div className="flex flex-col  lg:w-[260px]">
                         <p className="text-[20px] font-[700] mb-[1rem]">Connect With Us</p>
-                        {contact_link.map((x)=>(
-                            <div className="flex flex-col pb-[0.4rem]">
+                        {contact_link.map((x, index)=>(
+                            <div key={index} className="flex flex-col pb-[0.4rem]">
                                 <span className="text-[16px] font-[400]"><Link href="#">{x}</Link></span>
                             </div>
                             ))}
