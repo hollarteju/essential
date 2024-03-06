@@ -113,6 +113,7 @@
 
 .serviceCard p{
     font-size: 24px;
+    
 }
 
 .serviceCard span{
@@ -175,8 +176,8 @@
     }
 
     .headline p{
-        font-size: 24px !important;
-        width: 387px;
+        font-size: 20px !important;
+        width: 327px;
     }
 
     .laptop{
@@ -198,5 +199,33 @@
         width: 145px;
         height: 120px;
         right: 45%;
+    }
+
+    .serviceCard p{
+        line-height: 1.5rem;
+    }
+
+    .mobile{
+        width: 407px;
+        height: 420px;
+    }
+
+    .mobileText{
+        gap: 1rem;
+    }
+
+    .mobileText span{
+        margin-inline: 2rem;
+        padding-block: 1rem;
+    }
+
+    .solutionCard{
+        gap: 1rem;
+        padding-top: 3rem;
+       
+    }
+
+    .aboutTxt{
+        width: 190px;
     }
 }

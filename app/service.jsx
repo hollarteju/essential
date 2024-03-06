@@ -12,10 +12,10 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import {frequency, solution, contacts, contact_link} from "./items";
 
 export default function Service(){
-    
+    const items = [1,2]
     return(
     <div>
-        <div className={`${style.serviceContainer} px-[10%]  text-center flex flex-col gap-[88px] py-[150px]`}>
+        <section className={`${style.serviceContainer} px-[10%]  text-center flex flex-col gap-[88px] py-[150px]`}>
             <div className={`${style.serviceHd}`}>
                 <p className="text-[40px] font-[700]">What we do</p>
                 <h6 className="font-[500] text-[20px] px-[10%]">
@@ -26,7 +26,7 @@ export default function Service(){
             <div className="flex gap-[47px] w-full items-center justify-center">
                 <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[58px] py-[5%] px-[3%]`}>
                     <div className="">
-                        <div className=" w-[52px] mx-auto">{<FaBell size="70%" color="#B80C09" />}</div>
+                        <div className=" w-[42px] mx-auto">{<FaBell size="100%" color="#B80C09" />}</div>
                         <p className="text-[32px] font-[600]">Mail Scheduling</p>
                     </div>
                     <div>
@@ -36,7 +36,7 @@ export default function Service(){
                 </div>
                 <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[58px] py-[5%] px-[3%]`}>
                     <div className="">
-                        <div className=" w-[52px] mx-auto">{<FaRegEnvelope size="70%" color="#B80C09" />}</div>
+                        <div className=" w-[42px] mx-auto">{<FaRegEnvelope size="100%" color="#B80C09" />}</div>
                         <p className="text-[32px] font-[600]">24/7 Mailing system</p>
                     </div>
                     <div>
@@ -46,7 +46,7 @@ export default function Service(){
                 </div>
                 <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[20px] py-[5%] px-[3%]`}>
                     <div className="">
-                        <div className=" w-[52px] mx-auto">{<MdGroups size="70%" color="#B80C09" />}</div>
+                        <div className=" w-[42px] mx-auto">{<MdGroups size="100%" color="#B80C09" />}</div>
                         <p className="text-[32px] font-[600]">Send Multiple mail at once</p>
                     </div>
                     <div>
@@ -65,31 +65,23 @@ export default function Service(){
                  risus ipsum. Accumsan viverra morbi suspendisse id scelerisque sit.
                 </span>
             </div>
-        </div>
-        <div class={`${style.mobileContainer} bg-[#F0F0F0] w-full py-[88px]`}>
+        </section>
+        <section class={`${style.mobileContainer} bg-[#F0F0F0] w-full py-[88px]`}>
                 <div className="flex justify-between pb-[100px]  items-center px-[10%]">
-                    <div class={`${style.mobile} lg:h-677px lg:w-762px rounded-[47px]`}></div>
-                    <div className="flex flex-col gap-[3rem]">
-                       
-                            <span class="lg:w-593px rounded-[17px] border border-black py-[2rem] px-[2rem] text-center text-[20px] font-[500]">
-                                Lorem ipsum dolor sit amet consectetur. Rhoncus dignissim ultrices posuere ut
-                                 ornare ullamcorper nisl. Sed magna aliquam nibh id. Tincidunt adipiscing pharetra
-                                  enim vel sem. Cras nunc duis non cursus aliquam. Vestibulum velit tincidunt massa
-                                   diam diam habitasse.
-                            </span>
-                        
-                       
-                            <span class="lg:w-593px rounded-[17px] border border-black py-[2rem] px-[2rem] text-center text-[20px] font-[500]">
-                                    Lorem ipsum dolor sit amet consectetur. Rhoncus dignissim ultrices posuere ut
-                                    ornare ullamcorper nisl. Sed magna aliquam nibh id. Tincidunt adipiscing pharetra
-                                    enim vel sem. Cras nunc duis non cursus aliquam. Vestibulum velit tincidunt massa
-                                    diam diam habitasse.
-                            </span>
-                        
+                    <div class={`${style.mobile} lg:h-[677px] lg:w-[762px] rounded-[47px]`}></div>
+                    <div className={`${style.mobileText} flex flex-col gap-[3rem]`}>
+                        {items.map((item, index)=>(
+                        <span key={index} class={` lg:w-[593px] rounded-[17px] border border-black py-[2rem] px-[2rem] text-center text-[20px] font-[500]`}>
+                            Lorem ipsum dolor sit amet consectetur. Rhoncus dignissim ultrices posuere ut
+                             ornare ullamcorper nisl. Sed magna aliquam nibh id. Tincidunt adipiscing pharetra
+                              enim vel sem. Cras nunc duis non cursus aliquam. Vestibulum velit tincidunt massa
+                               diam diam habitasse.
+                        </span>
+                        ))}
                     </div>
                 </div>
-            </div>
-            <div className={`${style.frequency} bg-[#1F2944] py-[88px] w-full`}>
+        </section>
+            <section className={`${style.frequency} bg-[#1F2944] py-[88px] w-full`}>
                 <div className="mx-[10%] text-white flex flex-col gap-[8rem]">
                     <p className="text-center text-[40px] font-[900]">Frequentlly asked question</p>
                     <div class="flex justify-between w-full items-center">
@@ -106,8 +98,8 @@ export default function Service(){
                 
                 </div>
                 
-            </div>
-            <div className={`${style.solutionCnt} bg-[#F0F0F0] pl-[5%] relative py-[100px]  flex flex-col gap-[50px]`}>
+            </section>
+            <section className={`${style.solutionCnt} bg-[#F0F0F0] pl-[5%] relative py-[100px]  flex flex-col gap-[50px]`}>
                 <div className="text-[24px] font-[700]">
                     <p>Other Essential Solutions</p>
                 </div>
@@ -122,10 +114,10 @@ export default function Service(){
                         </div>
                     ))}
                 </div>
-            </div>
-            <div className="text-white bg-[#4772E2] w-full relative py-[100px] pb-[200px] px-[5%]">
+            </section>
+            <section className="text-white bg-[#4772E2] w-full relative py-[100px] pb-[200px] px-[5%]">
                 <div className={`${style.contacts} flex justify-between`}>
-                    <div className="flex flex-col gap-[1rem] lg:w-[260px]">
+                    <div className={`${style.aboutTxt} flex flex-col gap-[1rem] lg:w-[260px]`}>
                         <p className="text-[20px] font-[700]">About</p>
                         <span className="text-[16px] font-[400]">
                             Your customers are your most important source of feedback.
@@ -163,7 +155,7 @@ export default function Service(){
                     </div>
 
                 </div>
-            </div>
+            </section>
     </div>
     )
 }
