@@ -95,7 +95,7 @@ export default function Service(){
                     <div class="flex justify-between w-full items-center">
                         <div class="lg:w-[552px] flex flex-col gap-[4rem] pb-[100px]">
                             {frequency.map((x)=>(
-                                <div class={`${style.smTxt} flex text-[24px] font-[500] items-center gap-[1rem]`}>
+                                <div key={x.number} class={`${style.smTxt} flex text-[24px] font-[500] items-center gap-[1rem]`}>
                                 <FaPlusSquare size="24px" />
                                 <span>{x.text}</span>
                             </div>
@@ -113,7 +113,7 @@ export default function Service(){
                 </div>
                 <div class="flex text-center gap-[30px]">
                     {solution.map((x)=>(
-                        <div className={`${style.solutionCard} flex flex-col gap-[2rem] px-[0.5rem] pt-[6rem] lg:w-[259px] lg:h-[305px] rounded-[10px] bg-[#F5F5F5]`}>
+                        <div key={x.number} className={`${style.solutionCard} flex flex-col gap-[2rem] px-[0.5rem] pt-[6rem] lg:w-[259px] lg:h-[305px] rounded-[10px] bg-[#F5F5F5]`}>
                             <p className="text-[24px] font-[700] text-[#333333]">{x.headline}</p>
                             <span className="text-[16px] font-[500]">
                                 Lorem ipsum dolor sit amet consectetur. At diam et
