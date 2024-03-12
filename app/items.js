@@ -1,3 +1,11 @@
+import { HiOutlineInbox } from "react-icons/hi";
+import { IoMdSend } from "react-icons/io";
+import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { RiDraftLine } from "react-icons/ri";
+import { PiChatsFill } from "react-icons/pi";
+import { MdLabelImportantOutline } from "react-icons/md";
+import { RiSpam2Line } from "react-icons/ri";
+
 export const solution = [
     {
         
@@ -68,6 +76,59 @@ export const contact_link =[
     "Oosh",
     "Sowa"
 ]
+
+export const group_btns_one = [
+    {
+        "text": "Inbox",
+        "icon":<HiOutlineInbox size="100%" />
+    },
+    {
+        "text": "Sent",
+        "icon":<IoMdSend size="100%" />
+    },
+    {
+        "text": "Unread",
+        "icon":<MdOutlineMarkEmailUnread size="100%" />
+    }
+
+]
+
+export const group_btns_two = [
+    {
+        "text": "Draft",
+        "icon":<RiDraftLine size="100%" />
+    },
+    {
+        "text": "Chats",
+        "icon":<PiChatsFill size="100%" />
+    },
+    {
+        "text": "Important",
+        "icon":<MdLabelImportantOutline  size="100%" />
+    },
+    {
+        "text": "Spam",
+        "icon":<RiSpam2Line size="100%" />
+    }
+
+]
+
+export const group_btns_three = [
+    {
+        "text": "Categories",
+        "icon":<RiDraftLine size="100%" />
+    },
+    {
+        "text": "Forums",
+        "icon":<PiChatsFill size="100%" />
+    },
+    {
+        "text": "Social",
+        "icon":<MdLabelImportantOutline  size="100%" />
+    }
+
+]
+
     
 
 
