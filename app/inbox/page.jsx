@@ -31,17 +31,17 @@ const Inbox = ()=>{
 
                 <div class={`${style.logoLayer} flex gap-[6rem] items-center text-center`}>
                     <p className="text-blue-500 font-[400]">ESSENTIAL <span class="text-black">NG</span></p>
-                    <div class={`flex lg:w-[850px] px-4 bg-[#EEF8FF] rounded-[10px] text-[#747474] items-center text-center`}>
+                    <div class="flex lg:w-[850px] px-4 bg-[#EEF8FF] rounded-[10px] text-[#747474] items-center text-center">
                         <i class="lg:w-[20px] lg:h-[20px]"><IoSearchOutline size="100%"/></i>
                         <input type="text" class="w-full px-4 bg-[#EEF8FF] py-[15px] text-[16px] font-[400] text-black outline-none" />
-                        <div class={`flex gap-2 text-[12px] font-[400] items-center text-center`}>
+                        <div class="flex gap-2 text-[12px] font-[400] items-center text-center">
                             <h5>Option</h5>
                             <span class="lg:w-12px lg:h-[12px]"><IoIosArrowDown size="100%"/></span>
                         </div>
                     </div> 
                 </div>
 
-                <div class={`flex gap-5 text-center items-center`}>
+                <div class="flex gap-5 text-center items-center">
                     <i class="lg:w-[20px] lg:h-[20px] text-blue-700"><FaCog  size="100%"/></i>
                     <div class=" relative">
                         <Image className="rounded-[50%]" src="/image/user.png" width={50} height={50} alt="profile image" />
@@ -50,7 +50,7 @@ const Inbox = ()=>{
             </div>
             <div class={`${style.body} grid grid-cols-6 gap-3 `}>
                 <div className="ml-8 flex flex-col gap-8">
-                    <div class={`lg:col-span-1 `}>
+                    <div class="lg:col-span-1 ">
                         <div className="flex gap-2 bg-[#4772E2] text-[20px] font-[400] text-center items-center px-4 py-3 rounded-[5px] text-white">
                             <i className="lg:w-[20px] lg:h-[20px]"><HiPencilAlt size="100%" /></i>
                             <p>Compose</p>
@@ -82,7 +82,7 @@ const Inbox = ()=>{
                     
                 </div>
                 
-                <div class={`lg:col-span-4 px-2 w-full`}>
+                <div class="lg:col-span-4 px-2 w-full">
                     <div class={`${style.boxes} lg:h-[40px]`}></div>
                     <div className="flex justify-between lg:w-full pl-4 pt-6 text-[#747474] items-center text-center">
                         <div class="flex gap-3">
@@ -137,7 +137,7 @@ const Inbox = ()=>{
                     </div>
                     {/* <InboxMessages/> */}
                 </div>
-                <div class={`lg:col-span-1 flex flex-col gap-3`}>
+                <div class="lg:col-span-1 flex flex-col gap-3">
                     <div className="flex gap-3 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white">
                         <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BiSolidUserRectangle size="100%" /></i>
                         <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BsFillCalendar2DateFill size="100%" /></i>
