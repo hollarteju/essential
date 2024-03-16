@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./inbox.module.css";
 import InboxMessages from "../../componenets/inboxMessages";
+import CalendarPage from "../../componenets/calendar";
 import Image from "next/image";
 import {group_btns_one, group_btns_two, group_btns_three} from "../items"
 import { IoIosArrowDown } from "react-icons/io";
@@ -15,7 +16,10 @@ import { IoIosArrowForward } from "react-icons/io";
 import { MdGroups } from "react-icons/md";
 import { FaTag } from "react-icons/fa6";
 import { FaExclamationCircle } from "react-icons/fa";
-
+import { BiSolidUserRectangle } from "react-icons/bi";
+import { BsFillCalendar2DateFill } from "react-icons/bs";
+import {CiMemoPad} from "react-icons/ci";
+import {BiSolidChat} from "react-icons/bi"
 
 
 // Inbox page component
@@ -103,11 +107,12 @@ const Inbox = ()=>{
                             </div>
                         </div>
                     </div>
-                    <div className="pt-6 pl-4 flex gap-[70px] items-center text-center text-[14px] text-[#747474] font-[500] w-full">
+                    <div className="pt-6 pb-3 pl-4 flex gap-[10rem] items-center text-center text-[14px] text-[#747474] font-[500] w-full">
                         <div className="flex gap-2 items-center text-center text-[#E96767] font-[500]">
                             <i className="lg:w-[22px] lg:h-[22px]"><MdGroups size="100%"/></i>
                             <span>Primary</span>
                         </div>
+                        <div className="flex gap-[5rem]">
                         <div className="flex gap-2 items-center text-center">
                             <i className="lg:w-[22px] lg:h-[22px]"><MdGroups size="100%"/></i>
                             <div className="block">
@@ -128,13 +133,22 @@ const Inbox = ()=>{
                                 <p>Update</p>
                             </div>
                         </div>
+                        </div>
                     </div>
-                    <InboxMessages/>
+                    {/* <InboxMessages/> */}
                 </div>
+                <div class={`lg:col-span-1 flex flex-col gap-3`}>
+                    <div className="flex gap-3 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white">
+                        <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BiSolidUserRectangle size="100%" /></i>
+                        <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BsFillCalendar2DateFill size="100%" /></i>
+                        <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><CiMemoPad size="100%" /></i>
+                        <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BiSolidChat size="100%" /></i>
+                    </div>
+                    <CalendarPage/>
+                </div>
+            </div>
+            <div>
                 
-                <div class={`lg:col-span-1 p-4 border`}>
-                        calender
-                </div>
             </div>
         </div>
     )

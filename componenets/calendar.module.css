@@ -1,0 +1,57 @@
+
+
+.container{
+    font-size: 14px !important;
+}
+
+
+
+.days{
+    font-size: 11px;
+    color: #474545;
+    border: none;
+}
+
+.cells{
+    color: #000;
+    height: 4px !important;
+    width:10px;
+    border: none;
+}
+
+.fc .fc-header-toolbar.fc-toolbar{
+    display: block !important;
+    justify-content: center !important;
+}
+
+.calendar_container__FboGM{
+    border: none;
+}
+
+.containe .fc-scrollgrid{
+    overflow: visible !important;
+}
+
+.containe .fc-theme-standard .fc-scrollgrid{
+    border:none
+}
+
+.containe .fc .fc-view-harness-active {
+    inset: 0px;
+    position: relative;
+    height: 300px;
+}
+
+.containe .fc .fc-scroller-harness {
+    /* direction: ltr; */
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    position: relative;
+    background-color: #ebf5ff !important;
+}
+
+.containe .fc-direction-ltr {
+    direction: ltr;
+    text-align: center !important;
+}

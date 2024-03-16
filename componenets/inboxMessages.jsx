@@ -35,29 +35,33 @@ export default function InboxMessages(){
     // alert(names)
     return(
 
-        <div className={`flex  w-full bg-gray-700 w-full`}>
+        <div className={`flex  w-full bg-gray-700`}>
             <ul className="w-full items-center block">
                 {names.map((name,index)=>(
-                    <li style={{borderInline:"none"}}  key={index} className="flex pl-4 border border-gray-100 py-2 gap-[2rem] text-center items-center text-[14px] text-gray-700 font-[400]">
-                    <div style={{width:"200px"}} className="flex  gap-2 text-center items-center w-[200px]">
-                        <i className="w-[18px] h-[18px] text-gray-400"><MdOutlineCheckBoxOutlineBlank size="18px"/></i>
-                        <i className="w-[18px] h-[18px] text-gray-400"><IoIosStarOutline size="18px"/></i>
-                        <i className="w-[18px] h-[18px] text-gray-400"><TbArrowBadgeRight size="18px"/></i>
+                    <li style={{borderInline:"none"}}  key={index} className="relative flex pl-4 border border-gray-100 py-2 justify-between text-center items-center text-[14px] text-gray-700 font-[400]">
+                    <div style={{marginRight:"4rem"}} className="flex gap-[3rem] overflow-hidden w-full relative items-center text-center">
+                        <div style={{width:"200px"}} className="flex  gap-2 text-center items-center w-[200px]">
+                            <i className="w-[18px] h-[18px] text-gray-400"><MdOutlineCheckBoxOutlineBlank size="18px"/></i>
+                            <i className="w-[18px] h-[18px] text-gray-400"><IoIosStarOutline size="18px"/></i>
+                            <i className="w-[18px] h-[18px] text-gray-400"><TbArrowBadgeRight size="18px"/></i>
                         <div className=" flex overflow-hidden lg:w-[25px] ">
                             <p style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}}>{name.firstName} {name.lastName}</p>
                         </div>
-                    </div>
+                        </div>
                    
-                        <div style={{width:"63%"}} className=" text-start items-center">
+                        <div  className=" text-start  items-center flex gap-2 ">
                             <div  style={{maxWidth:"186px", overflow:"hidden"}} className="">
                             <span style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} >{messages[index].title}</span>
                             </div>
-                           
+                            <div  style={{ overflow:"hidden"}} className="">
+                            <span style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} className="bg-red" > -{messages[index].title}</span>
+                            </div>
                             {/* <span>{messages[index].posts}</span> */}
                         </div>
-                        <div className="self-end font-[500]">
-                            <h4>2:23 PM</h4>
-                        </div>
+                    </div>
+                    <div style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} className="relative w-[100px] self-end font-[500]">
+                        <h4>2:23 PM</h4>
+                    </div>
                 </li>
                 ))}
                 
