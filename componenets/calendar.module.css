@@ -6,17 +6,27 @@
 
 
 
+.slots tr{
+    background-color: #3e6990;
+    cursor:pointer;
+}
+
+
+
+.fc-theme-standard td, .fc-theme-standard th{
+    border: 1px solid red
+}
+
+
+
 .days{
     font-size: 11px;
-    color: #474545;
-    border: none;
+    background-color: #ebf5ff;
 }
 
 .cells{
-    color: #000;
-    height: 4px !important;
-    width:10px;
-    border: none;
+    font-size: 11px;
+    background-color: #ebf5ff;
 }
 
 .fc .fc-header-toolbar.fc-toolbar{

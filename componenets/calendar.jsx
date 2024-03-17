@@ -3,19 +3,26 @@ import style from "./calendar.module.css";
 import "./calendar.module.css";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
+import timeGridPlugin from "@fullcalendar/timegrid"
+import interactionPlugin from "@fullcalendar/interaction"
 import styled from "@emotion/styled";
+
 
 import React from 'react';
 
+const styledWrapper = styled.div`
+.fc{
+    color:red;
+}
+`;
 const CalendarPage = ()=>{
-    const styledWrapper = styled.div`
-    .fc-direction-ltr{
-        color:red
-    }`
+   const trigger = (arg)=>{
+    alert(arg.date);
+   }
     return(
         <div className={`${style.container} h-full`}>
-            <styledWrapper>
-            <FullCalendar  dayHeaderClassNames={style.days} dayCellClassNames={style.cells} classN
+         
+            <FullCalendar  dayHeaderClassNames={style.days} dayCellClassNames={style.cells} viewClassNames={style.slots}
             plugins = {[dayGridPlugin]}
             initialView = "dayGridMonth"
             headerToolbar= {{
@@ -23,9 +30,16 @@ const CalendarPage = ()=>{
                 center: "",
                 end: "prev,next",
             }}
-
-            height="350px"
+            selectable={true}
+            selectMirror={true}
+            nowIndicator={true}
+            editable={true}
+            events={allEvents}
+            
+            // eventClick={trigger}
             eventBackgroundColor="blue"
+            height="450px"
+        
             
             customButtons={{
                 customHeader:{
@@ -40,7 +54,25 @@ const CalendarPage = ()=>{
                 
             }}
             />
-            </styledWrapper>
+            <FullCalendar  dayHeaderClassNames={style.days} dayCellClassNames={style.cells} classN
+            plugins = {[timeGridPlugin]}
+            initialView = "timeGridDay"
+            headerToolbar= {{
+                start:"",
+                center: "",
+                end: "",
+            }}
+            
+            height="700px"
+            
+            customButtons={{
+                customHeader:{
+                    click: function(){
+                        alert("jhjgjh")
+                    }
+                }
+            }}
+            />
             
         </div>
     )
