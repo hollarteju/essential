@@ -34,7 +34,6 @@ const CalendarPage = ()=>{
             selectMirror={true}
             nowIndicator={true}
             editable={true}
-            events={allEvents}
             
             // eventClick={trigger}
             eventBackgroundColor="blue"
