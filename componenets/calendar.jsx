@@ -23,7 +23,7 @@ const CalendarPage = ()=>{
         <div className={`${style.container} h-full`}>
          
             <FullCalendar  dayHeaderClassNames={style.days} dayCellClassNames={style.cells} viewClassNames={style.slots}
-            plugins = {[dayGridPlugin]}
+            plugins = {[dayGridPlugin, interactionPlugin]}
             initialView = "dayGridMonth"
             headerToolbar= {{
                 start:"title",

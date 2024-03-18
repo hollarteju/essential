@@ -135,7 +135,6 @@ const Inbox = ()=>{
                         </div>
                         </div>
                     </div>
-                    {/* <InboxMessages/> */}
                 </div>
                 <div class="lg:col-span-1 flex flex-col gap-3">
                     <div className="flex gap-3 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white">
