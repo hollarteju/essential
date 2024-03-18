@@ -50,16 +50,22 @@ export default function InboxMessages(){
                         </div>
                    
                         <div  className=" text-start  items-center flex gap-2 ">
-                            <div  style={{maxWidth:"186px", overflow:"hidden"}} className="">
+                            <div  style={{maxWidth:"186px", overflow:"hidden"}} >
                             <span style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} >{messages[index].title}</span>
                             </div>
-                            <div  style={{ overflow:"hidden"}} className="">
+                            <div  style={{ overflow:"hidden"}}>
                             <span style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} className="bg-red" > -{messages[index].title}</span>
                             </div>
                         </div>
                     </div>
-                    <div style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} className="relative w-[100px] self-end font-[500]">
+                    <div style={{whiteSpace:"nowrap", textOverflow:"ellipsis"}} className={`${style.time} relative w-[100px] self-end font-[500]`}>
                         <h4>2:23 PM</h4>
+                        <div className={`${style.messagesIcons} flex gap-2 hidden`}>
+                            <i className="w-[18px] h-[18px] text-gray-500 relative hover:scale-110 "><ImFolderDownload size="100%"/></i>
+                            <i className="w-[18px] h-[18px] text-gray-500 relative hover:scale-110 "><MdDelete size="100%"/></i>
+                            <i className="w-[18px] h-[18px] text-gray-500 relative hover:scale-110 "><FaEnvelopesBulk size="100%"/></i>
+                            <i className="w-[18px] h-[18px] text-gray-500 relative hover:scale-110 "><FaClock size="100%"/></i>
+                        </div>
                     </div>
                 </li>
                 ))}

@@ -6,6 +6,22 @@
     background-clip: border-box;
 }
 
+.messagesIcons{
+    display: none ;
+}
+.messagesCon li:hover{
+    background-color: #f5f7f7;
+}
+.messagesCon li:hover .messagesIcons{
+    display: flex;
+}
+.messagesCon li:hover .time h4{
+    display: none;
+}  
+.messagesIcons i:hover{
+    color:red
+}  
+
 @media(max-width:1440px){
 .logoLayer p{
     font-size: 15px ;
@@ -73,4 +89,5 @@
     width: 13px;
     height: 13px;
 }
+
 }
