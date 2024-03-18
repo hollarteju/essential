@@ -30,8 +30,8 @@ const Inbox = ()=>{
             <div class={`${style.navBar} flex justify-between items-center pl-[5%] pr-[2%] text-center py-4`}>
 
                 <div class={`${style.logoLayer} flex gap-[6rem] items-center text-center`}>
-                    <p className="text-blue-500 font-[400]">ESSENTIAL <span class="text-black">NG</span></p>
-                    <div class="flex lg:w-[850px] px-4 bg-[#EEF8FF] rounded-[10px] text-[#747474] items-center text-center">
+                    <p className="text-blue-500 font-[400] text-[20px]">ESSENTIAL <span class="text-black">NG</span></p>
+                    <div class={`${style.search} flex lg:w-[850px] px-4 bg-[#EEF8FF] rounded-[10px] text-[#747474] items-center text-center`}>
                         <i class="lg:w-[20px] lg:h-[20px]"><IoSearchOutline size="100%"/></i>
                         <input type="text" class="w-full px-4 bg-[#EEF8FF] py-[15px] text-[16px] font-[400] text-black outline-none" />
                         <div class="flex gap-2 text-[12px] font-[400] items-center text-center">
@@ -41,22 +41,22 @@ const Inbox = ()=>{
                     </div> 
                 </div>
 
-                <div class="flex gap-5 text-center items-center">
+                <div class={`${style.profilePics} flex gap-5 text-center items-center`}>
                     <i class="lg:w-[20px] lg:h-[20px] text-blue-700"><FaCog  size="100%"/></i>
                     <div class=" relative">
-                        <Image className="rounded-[50%]" src="/image/user.png" width={50} height={50} alt="profile image" />
+                        <Image className={`${style.image} rounded-[50%]`} src="/image/user.png" width={50} height={50} alt="profile image" />
                     </div>
                 </div>
             </div>
             <div class={`${style.body} grid grid-cols-6 gap-3 `}>
                 <div className="ml-8 flex flex-col gap-8">
-                    <div class="lg:col-span-1 ">
+                    <div class={`${style.menu} lg:col-span-1 `}>
                         <div className="flex gap-2 bg-[#4772E2] text-[20px] font-[400] text-center items-center px-4 py-3 rounded-[5px] text-white">
-                            <i className="lg:w-[20px] lg:h-[20px]"><HiPencilAlt size="100%" /></i>
+                            <i className="lg:w-[20px] lg:h-[20px] hover:blue-400 cursor-pointer"><HiPencilAlt size="100%" /></i>
                             <p>Compose</p>
                         </div>
                         {group_btns_one.map((btn, index)=>(
-                            <div key={index} className="flex gap-2 leading-3 text-center items-center font-[400] px-4 py-3">
+                            <div key={index} className="flex gap-2 leading-3 text-center items-center font-[400] px-4 py-3 transform hover:scale-110 cursor-pointer">
                             <i className="lg:w-[20px] lg:h-[20px]">{btn.icon}</i>
                             <p>{btn.text}</p>
                             </div>
@@ -64,7 +64,7 @@ const Inbox = ()=>{
                     </div>
                     <div>
                         {group_btns_two.map((btn, index)=>(
-                                <div key={index} className="flex gap-2 text-center items-center font-[400] px-4 py-3">
+                                <div key={index} className="flex gap-2 text-center items-center font-[400] px-4 py-3 transform hover:scale-110 cursor-pointer">
                                 <i className="lg:w-[20px] lg:h-[20px]">{btn.icon}</i>
                                 <p>{btn.text}</p>
                                 </div>
@@ -73,7 +73,7 @@ const Inbox = ()=>{
                     
                     <div>
                         {group_btns_three.map((btn, index)=>(
-                                <div key={index} className="flex gap-2 text-center items-center font-[400] px-4 py-3">
+                                <div key={index} className="flex gap-2 text-center items-center font-[400] px-4 py-3 transform hover:scale-110 cursor-pointer">
                                 <i className="lg:w-[20px] lg:h-[20px]">{btn.icon}</i>
                                 <p>{btn.text}</p>
                                 </div>
@@ -84,35 +84,35 @@ const Inbox = ()=>{
                 
                 <div class="lg:col-span-4 px-2 w-full">
                     <div class={`${style.boxes} lg:h-[40px]`}></div>
-                    <div className="flex justify-between lg:w-full pl-4 pt-6 text-[#747474] items-center text-center">
+                    <div className={`${style.reload} flex justify-between lg:w-full pl-4 pt-6 text-[#747474] items-center text-center`}>
                         <div class="flex gap-3">
-                            <div class="flex items-center text-center text-[16px] text-start">
+                            <div class="flex items-center text-center text-[16px] text-start cursor-pointer">
                                 <i class="lg:w-[14px] lg:h-[14px]"><MdOutlineCheckBoxOutlineBlank size="100%"/></i>
-                                <i class="lg:w-[6px] lg:h-[6px]"><IoIosArrowDown size="100%"/></i>
+                                <i class={`${style.arrowDown} lg:w-[6px] lg:h-[6px]`}><IoIosArrowDown size="100%"/></i>
                             </div>
-                            <div className="flex gap-3">
+                            <div className="flex gap-3 cursor-pointer">
                                 <i class="lg:w-[14px] lg:h-[14px]"><IoReload size="100%"/></i>
                                 <i class="lg:w-[14px] lg:h-[14px]"><BsThreeDotsVertical size="100%"/></i>
                             </div>
                             
                         </div>
                         <div class="flex gap-3 items-center">
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 text-[14px]">
                                 <span>1-50 of</span>
                                 <span>2,619</span>
                             </div>
-                            <div className="flex">
+                            <div className="flex cursor-pointer">
                                 <i class="lg:w-[14px] lg:h-[14px]"><IoIosArrowBack size="100%"/></i>
                                 <i class="lg:w-[14px] lg:h-[14px]"><IoIosArrowForward size="100%"/></i>
                             </div>
                         </div>
                     </div>
-                    <div className="pt-6 pb-3 pl-4 flex gap-[10rem] items-center text-center text-[14px] text-[#747474] font-[500] w-full">
-                        <div className="flex gap-2 items-center text-center text-[#E96767] font-[500]">
+                    <div className={`${style.indicators} pt-6 pb-3 pl-4 flex gap-[10rem] items-center text-center text-[14px] text-[#747474] font-[500] w-full`}>
+                        <div className="flex gap-2 items-center text-center text-[#E96767] font-[500] cursor-pointer">
                             <i className="lg:w-[22px] lg:h-[22px]"><MdGroups size="100%"/></i>
                             <span>Primary</span>
                         </div>
-                        <div className="flex gap-[5rem]">
+                        <div className="flex gap-[5rem] cursor-pointer">
                         <div className="flex gap-2 items-center text-center">
                             <i className="lg:w-[22px] lg:h-[22px]"><MdGroups size="100%"/></i>
                             <div className="block">
@@ -120,14 +120,14 @@ const Inbox = ()=>{
                                 <span className="font-[400] text-[12px]">Nextdoor, Message fro...</span>
                             </div>
                         </div>
-                        <div className="flex gap-2 items-center text-center">
+                        <div className="flex gap-2 items-center text-center cursor-pointer">
                             <i className="lg:w-[22px] lg:h-[22px]"><FaTag size="100%"/></i>
                             <div className="block ">
                                 <h6 className="flex gap-3">Promotions <p className="px-2 bg-[#20A028] text-white rounded-[2px]">6 new</p></h6>
                                 <span className="font-[400] text-[12px]">Lowe's Home Improvement</span>
                             </div>
                         </div>
-                        <div className="flex gap-2 items-center text-center">
+                        <div className="flex gap-2 items-center text-center cursor-pointer">
                             <i className="lg:w-[22px] lg:h-[22px]"><FaExclamationCircle size="100%"/></i>
                             <div className="block ">
                                 <p>Update</p>
@@ -135,9 +135,10 @@ const Inbox = ()=>{
                         </div>
                         </div>
                     </div>
+                    <InboxMessages />
                 </div>
                 <div class="lg:col-span-1 flex flex-col gap-3">
-                    <div className="flex gap-3 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white">
+                    <div className={`${style.scheduleIcons} flex gap-3 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white`}>
                         <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BiSolidUserRectangle size="100%" /></i>
                         <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><BsFillCalendar2DateFill size="100%" /></i>
                         <i className="lg:w-[20px] lg:h-[20px] cursor-pointer transform hover:scale-110"><CiMemoPad size="100%" /></i>

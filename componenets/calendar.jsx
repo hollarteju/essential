@@ -17,7 +17,7 @@ const styledWrapper = styled.div`
 `;
 const CalendarPage = ()=>{
    const trigger = (arg)=>{
-    alert(arg.date);
+    alert(arg.dateStr);
    }
     return(
         <div className={`${style.container} h-full`}>
@@ -36,6 +36,7 @@ const CalendarPage = ()=>{
             editable={true}
             
             // eventClick={trigger}
+            dateClick={trigger}
             eventBackgroundColor="blue"
             height="450px"
         

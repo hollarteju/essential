@@ -5,3 +5,72 @@
     background-size: cover;
     background-clip: border-box;
 }
+
+@media(max-width:1440px){
+.logoLayer p{
+    font-size: 15px ;
+}
+.logoLayer .search i,
+.profilePics i{
+    height: 15px;
+    width: 15px;
+}
+.logoLayer .search input{
+    padding-block: 11px;
+    font-size: 11.5px;
+}
+
+.logoLayer .search h5{
+    font-size: 9px;
+}
+.logoLayer .search span{
+    width: 9px;
+    height: 9px;
+}
+.profilePics .image{
+    width: 18px;
+    height: 18px;
+}
+.menu div{
+    font-size: 15px;
+}
+.menu i{
+    width: 15px;
+    height: 15px;
+}
+.boxes{
+    height: 30px;
+}
+.reload i{
+    width: 10px;
+    height: 10px;
+}
+.reload span{
+    font-size: 10px;
+}
+.arrowDown{
+    width: 4px;
+    height: 4px;
+}
+.indicators{
+    font-size: 10px;
+}
+.indicators span{
+    font-size: 8px;
+}
+.indicators i{
+    width: 16px;
+    height: 16px;
+}
+.scheduleIcons i{
+    width: 15px;
+    height: 15px;
+}
+.messagesCon ul li{
+    font-size: 10px;
+}
+.messagesCon ul li i{
+    width: 13px;
+    height: 13px;
+}
+}
