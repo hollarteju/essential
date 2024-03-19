@@ -22,7 +22,6 @@ import {CiMemoPad} from "react-icons/ci";
 import {BiSolidChat} from "react-icons/bi"
 
 
-// Inbox page component
 const Inbox = ()=>{
    
     return(
