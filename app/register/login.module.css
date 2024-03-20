@@ -22,6 +22,8 @@
     font-size: 16px;
 }
 
+.message{display: none;}
+
 .day{
     width: 92px;
     position: relative;
@@ -37,21 +39,12 @@
     position: relative;
 }
 
-.message{
-    display: none;
-}
 
-.footer{
-    margin-top: 4rem;
-    gap: 174px;
-    font-size: medium;
-}
+
+
 
 @media(max-width:1440px){
-    .logoContainer{
-        margin-inline: 99px;
-        margin-bottom: 75px;
-    }
+   
     .logo{
         font-size: 30px;
         height: 48px;
@@ -63,14 +56,19 @@
     }
 
     .formContainer{
-        width: 854px;
         height: 390px;
         
     }
 
-    .loginContainer{
+    /* .formContainer{
+        width: 854px;
+        height: 390px;
+        
+    } */
+
+    /* .loginContainer{
         width: 421px;
-    }
+    } */
 
      .formOne{
         padding-block: 10px;
@@ -166,7 +164,7 @@
 
 }
 
-@media(max-width:1045px){
+/* @media(max-width:1045px){
     .loginContainer{
         padding-block: 35%;
         height: 75vh !important;
@@ -175,5 +173,35 @@
     .registerContainer{
         padding-block: 35%;
         height: 75vh !important;
+    }
+} */
+
+
+@media(max-width:884px){
+    .logoContainer{
+        margin-inline: 10px;
+        margin-bottom: 75px;
+    }
+
+
+    .rightCard{
+        display: none;
+    }
+
+   
+    .message{
+        display: none;
+    }
+    
+}
+
+@media(max-width:428px){
+    .footer p{
+        font-size: 10px;
+        color: black;
+    }
+    .formContainer{
+        height: 430px;
+        
     }
 }

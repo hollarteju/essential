@@ -1,6 +1,6 @@
 "use client";
 import { React, useEffect, useState } from "react";
-import style from "../app/inbox/inbox.module.css"
+import style from "../app/email/email.module.css"
 import { IoIosStarOutline } from "react-icons/io";
 import { TbArrowBadgeRight } from "react-icons/tb";
 import { ImFolderDownload } from "react-icons/im";
@@ -10,7 +10,7 @@ import { FaClock } from "react-icons/fa6";
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 
 
-export default function InboxMessages(){
+export default function EmailMessages(){
     const [names, setNames] = useState([]);
     const [messages, setMessages] = useState([]);
    

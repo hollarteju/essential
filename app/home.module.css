@@ -1,6 +1,6 @@
 .headline{
     background-image: url("./images/Vector.png");
-    background-position: cover;
+    background-position:center;
     background-repeat: no-repeat;
     background-size:cover;
     display: flex;
@@ -181,24 +181,16 @@
     }
 
     .laptop{
-        width: 601px;
-        top: 200px;
+        
+        display: none;
     }
 
     .profile{
-        width: 200px;
-        height: 200px;
-        right: 34% !important;
-        /* left: 500px; */
-        top:197px
+        display:none
     }
     
     .group{
-        /* left: 440px ; */
-        top: 370px;
-        width: 145px;
-        height: 120px;
-        right: 45%;
+        display: none;
     }
 
     .serviceCard p{
@@ -227,5 +219,24 @@
 
     .aboutTxt{
         width: 190px;
+    }
+}
+@media(max-width:430px){
+    .headline p{
+        font-size: 15px !important;
+        width: 250px;
+    }
+    .headline button{
+        width: 126px;
+        font-size: 12px;
+        padding-block: 1rem;
+    }
+    .headline span{
+        width:100px
+    }
+    .footer{
+        font-size: 11px;
+        justify-content: space-between;
+        padding-inline: 1.5rem;
     }
 }

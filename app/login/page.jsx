@@ -11,16 +11,16 @@
 
 // const Login = ()=>{
 //     return(
-//         <div class="font-[sans-serif] text-gray-800 bg-white max-w-screen block items-center mx-auto md:h-screen p-4 font-lato">
-//             <div  class={`${style.logoContainer} flex gap-[12px] items-center py-2 lg:mx-[132px] mb-[200px]`}>
+//         <div class={`${style.container} font-[sans-serif] text-gray-800 bg-white max-w-screen block items-center mx-auto h-screen p-4 font-lato`}>
+//             <div  class={`${style.logoContainer} flex gap-[12px] items-center py-2 md:px-[10%] sm:px-[0px]`}>
 //                 <p class={`${style.logo} px-6 bg-[#B80C09]  lg:text-[40px] text-white font-600 rounded-[16px] h-[65px]`}>e</p>
 //                 <span class={`${style.logoSpan} text-[#4772E2] text-[16px]`}>Essential Mail</span>
 //             </div>
-            
-//             <div  className={`${style.loginContainer} items-center overflow-hidden md:h-551 max-w-[562px] mx-auto`}>
+//             <div className='flex flex-col justify-between h-[80vh]'>
+//             <div  className={`${style.loginContainer} items-center overflow-hidden md:h-full lg:w-[562px] md:w-[421px] sm:w-[100px]  md:mx-auto lg:py-[70px] md:py-[200px]`}>
 //                 <div className="relative items-center h-full w-full overflow-hidden contents-center">
                 
-//                     <form className={` h-full relative rounded-md py-6 px-4  sm:px-4 text-center transition-all `}>
+//                     <form className={` h-full relative rounded-md py-6 px-4 text-center transition-all `}>
 //                         <div className={`${style.loginHeader}  text-[24px]`}>
 //                             <i class="text-[30px]"><FaUser /></i>
 //                             <h3 className=" text-blue-700 font-semibold">ESSENTIAL <span className="text-gray-800">NG</span></h3>
@@ -53,6 +53,7 @@
         
 //             </div>
 //             <Footer/>
+//             </div>
 //     </div>
 //     )
 // }

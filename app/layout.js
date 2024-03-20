@@ -15,11 +15,11 @@ export default function RootLayout({children}){
   return (
     <html lang="en">
       <body >
-        <PostProvider>
+      
           <div>
             {children}
           </div>
-        </PostProvider>
+       
       </body>
     </html>
   )

@@ -38,7 +38,6 @@ const CalendarPage = ()=>{
             // eventClick={trigger}
             dateClick={trigger}
             eventBackgroundColor="blue"
-            height="450px"
         
             
             customButtons={{
@@ -63,7 +62,7 @@ const CalendarPage = ()=>{
                 end: "",
             }}
             
-            height="700px"
+            height="300px"
             
             customButtons={{
                 customHeader:{

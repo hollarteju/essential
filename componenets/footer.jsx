@@ -7,14 +7,14 @@ import { IoMdArrowDropright } from 'react-icons/io';
 const Footer = ()=>{
     return(
         <div>
-            <footer class={`${style.footer} flex lg:gap-[233px] justify-center mx-auto mt-[8rem]`}>
+            <footer class={`${style.footer} flex justify-between px-[5%] text-[15px] text-black pt-[10rem]  `}>
                 <div className="flex text-center items-center gap-1">
-                    <span class="hover:text-blue-500 "><Link href="#">English Language (Nig) </Link></span>
+                    <p class="hover:text-blue-500"><Link href="#">English Language (Nig) </Link></p>
                     <i><IoMdArrowDropright /></i>
                 </div>
-                <span class="hover:text-blue-500"><Link href="#">Help</Link></span>
-                <span class="hover:text-blue-500"><Link href="#">Terms</Link></span>
-                <span class="hover:text-blue-500"><Link href="#">Privacy</Link></span>
+                <p class="hover:text-blue-500"><Link href="#">Help</Link></p>
+                <p class="hover:text-blue-500"><Link href="#">Terms</Link></p>
+                <p class="hover:text-blue-500"><Link href="#">Privacy</Link></p>
             </footer>
         </div>
     )
