@@ -221,6 +221,21 @@
         width: 190px;
     }
 }
+@media(max-width:884px){
+    .serviceCard{
+        margin-bottom: 2rem !important;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile{
+        display: none;
+    }
+    .frameIcon{
+        display: none;
+    }
+}
 @media(max-width:430px){
     .headline p{
         font-size: 15px !important;
@@ -238,5 +253,18 @@
         font-size: 11px;
         justify-content: space-between;
         padding-inline: 1.5rem;
+    }
+    .text{
+        width: 350px !important;
+        margin: auto !important;
+    }
+}
+
+@media(max-width:320px){
+    .text{
+        width: 250px !important;
+    }
+    .serviceCard{
+        width: 250px !important;
     }
 }

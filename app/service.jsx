@@ -15,7 +15,7 @@ export default function Service(){
     const items = [1,2]
     return(
     <div>
-        <section className={`${style.serviceContainer} px-[10%]  text-center flex flex-col gap-[88px] py-[150px]`}>
+        <section className={`${style.serviceContainer} lg:px-[10%] md:px-[2rem]  text-center flex flex-col gap-[88px] py-[150px]`}>
             <div className={`${style.serviceHd}`}>
                 <p className="text-[40px] font-[700]">What we do</p>
                 <h6 className="font-[500] text-[20px] px-[10%]">
@@ -23,10 +23,10 @@ export default function Service(){
                 enim vel sem. Cras nunc duis non cursus aliquam. Vestibulum velit tincidunt massa diam diam habitasse.
                 </h6>
             </div>
-            <div className="flex gap-[47px] w-full items-center justify-center">
-                <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[58px] py-[5%] px-[3%]`}>
+            <div className={`${style.cardContainer} lg:flex lg:gap-[47px] w-full items-center lg:justify-center md:items-center md:mx-auto`}>
+                <div className={ `${style.serviceCard} md:mb-[2rem] relative lg:w-[451px] md:w-full lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[58px] py-[5%] px-[3%] mx-auto `}>
                     <div className="">
-                        <div className=" w-[42px] mx-auto">{<FaBell size="100%" color="#B80C09" />}</div>
+                        <div className=" w-[42px] mx-auto ">{<FaBell size="100%" color="#B80C09" />}</div>
                         <p className="text-[32px] font-[600]">Mail Scheduling</p>
                     </div>
                     <div>
@@ -34,7 +34,7 @@ export default function Service(){
                     </div>
                     
                 </div>
-                <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[58px] py-[5%] px-[3%]`}>
+                <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[58px] py-[5%] px-[3%] mx-auto`}>
                     <div className="">
                         <div className=" w-[42px] mx-auto">{<FaRegEnvelope size="100%" color="#B80C09" />}</div>
                         <p className="text-[32px] font-[600]">24/7 Mailing system</p>
@@ -44,7 +44,7 @@ export default function Service(){
                     </div>
                     
                 </div>
-                <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[20px] py-[5%] px-[3%]`}>
+                <div className={ `${style.serviceCard} relative lg:w-[451px] lg:h-[393px] bg-[#F0F0F0] flex flex-col gap-[20px] py-[5%] px-[3%] mx-auto`}>
                     <div className="">
                         <div className=" w-[42px] mx-auto">{<MdGroups size="100%" color="#B80C09" />}</div>
                         <p className="text-[32px] font-[600]">Send Multiple mail at once</p>
@@ -67,11 +67,11 @@ export default function Service(){
             </div>
         </section>
         <section class={`${style.mobileContainer} bg-[#F0F0F0] w-full py-[88px]`}>
-                <div className="flex justify-between pb-[100px]  items-center px-[10%]">
-                    <div class={`${style.mobile} lg:h-[677px] lg:w-[762px] rounded-[47px]`}></div>
-                    <div className={`${style.mobileText} flex flex-col gap-[3rem]`}>
+                <div className="border lg:flex lg:flex-row md:flex md:flex-col lg:justify-between pb-[100px]  items-center lg:px-[10%] md:px-[5%]">
+                    <div class={`${style.mobile} lg:h-[677px] lg:w-[762px]  rounded-[47px]`}></div>
+                    <div className={`${style.mobileText} flex flex-col gap-[3rem] `}>
                         {items.map((item, index)=>(
-                        <span key={index} class={` lg:w-[593px] rounded-[17px] border border-black py-[2rem] px-[2rem] text-center text-[20px] font-[500]`}>
+                        <span key={index} class={`${style.text} lg:w-[593px] rounded-[17px] border border-black py-[2rem] px-[2rem] text-center text-[20px] font-[500]`}>
                             Lorem ipsum dolor sit amet consectetur. Rhoncus dignissim ultrices posuere ut
                              ornare ullamcorper nisl. Sed magna aliquam nibh id. Tincidunt adipiscing pharetra
                               enim vel sem. Cras nunc duis non cursus aliquam. Vestibulum velit tincidunt massa
@@ -84,7 +84,7 @@ export default function Service(){
             <section className={`${style.frequency} bg-[#1F2944] py-[88px] w-full`}>
                 <div className="mx-[10%] text-white flex flex-col gap-[8rem]">
                     <p className="text-center text-[40px] font-[900]">Frequentlly asked question</p>
-                    <div class="flex justify-between w-full items-center">
+                    <div class="lg:flex md:block lg:justify-between w-full items-center">
                         <div class="lg:w-[552px] flex flex-col gap-[4rem] pb-[100px]">
                             {frequency.map((x, index)=>(
                                 <div key={index} class={`${style.smTxt} flex text-[24px] font-[500] items-center gap-[1rem]`}>
