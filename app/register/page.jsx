@@ -180,7 +180,7 @@ const Register = ()=>{
                 </div>
         
             </div>
-            <div id='message' className={`${style.message} lg:h-[475px] mx-auto items-center relative self-center  py-6 px-4  sm:px-4 text-center w-[550px]`}>
+            <div id='message' className={`${style.message} lg:h-[475px] mx-auto items-center relative self-center  py-6 px-4  sm:px-4 text-center lg:w-[550px] sm:w-[320px]`}>
                 <div className="mt-[4rem]">
                     <p className="text-[32px] ">Welcome to Essential</p>
                     <h3 className="text-[40px] font-300 pt-4 pb-10 ">We Are Login you in</h3>
