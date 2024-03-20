@@ -9,7 +9,8 @@
     z-index: 1000;
 }
 
-.logoContainer{
+.logoContainer,
+.links li{
     white-space: nowrap;
 }
 
@@ -24,6 +25,11 @@
 .btn p:hover{
     opacity: 0.7;
 }
+.menu{
+    display: none;
+}
+
+
 
 @media(max-width:1440px){
 
@@ -84,4 +90,25 @@
     /* .links li{
         cursor: pointer;
     } */
+}
+
+@media(max-width:884px){
+    .menu{
+        display: block;
+        position: absolute;
+        top: 1.8rem;
+        right: 1rem;
+        color: #B80C09;
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    .container{
+        padding-left: 8.5%;
+    }
+    
+}
+@media(max-width:430px){
+    .container{
+        padding-left: 5%;
+    }
 }

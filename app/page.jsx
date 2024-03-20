@@ -12,7 +12,7 @@ export default function Home() {
       <NavBar/>
       <div className={`${style.headlineContainer} w-[100%] h-100vh  relative lg:grid sm:block lg:grid-cols-4 md:grid-cols-2 bg-[#F0F0F0] gap[20px] g:pb-[11rem]`}>
         
-        <div className={`${style.headline} relative lg:mr-[0] md:mr-[12rem]  text-white h-full lg:col-span-3 md:col-span-2 px-[10%] lg:pt-[15rem] l`}>
+        <div className={`${style.headline} relative lg:mr-[0] md:mr-[12rem]  text-white h-full lg:col-span-3 md:col-span-2 md:px-[10%]  lg:pt-[15rem] `}>
           <p className={` lg:w-[517px] lg:text-[32px]  font-semibold`}>
                 Lorem ipsum dolor sit amet consectetur. Elit ut 
                 turpis rhoncus mauris adipiscing curabitur.

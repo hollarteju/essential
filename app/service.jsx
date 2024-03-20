@@ -116,7 +116,7 @@ export default function Service(){
                 </div>
             </section>
             <section className="text-white bg-[#4772E2] w-full relative py-[100px] pb-[200px] px-[5%]">
-                <div className={`${style.contacts} flex justify-between`}>
+                <div className={`${style.contacts} md:flex md:justify-between sm:block`}>
                     <div className={`${style.aboutTxt} flex flex-col gap-[1rem] lg:w-[260px]`}>
                         <p className="text-[20px] font-[700]">About</p>
                         <span className="text-[16px] font-[400]">
