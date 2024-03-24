@@ -1,0 +1,17 @@
+.inboxMessage button{
+    left: 3rem;
+    box-shadow: 0 4px 4px -1px rgb(59, 59, 59);
+    bottom: 1rem;
+}
+
+
+@media(max-width:1100px){
+    
+    .inboxMessage p{
+        display:block;
+    }
+    .printer{
+        display: none !;
+    }
+}
+

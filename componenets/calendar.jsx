@@ -20,7 +20,7 @@ const CalendarPage = ()=>{
     alert(arg.dateStr);
    }
     return(
-        <div className={`${style.container} h-full`}>
+        <div className={`${style.container}  h-full lg:block md:hidden`}>
          
             <FullCalendar  dayHeaderClassNames={style.days} dayCellClassNames={style.cells} viewClassNames={style.slots}
             plugins = {[dayGridPlugin, interactionPlugin]}
