@@ -63,7 +63,7 @@ const Email = ()=>{
                 </div>
             </div>
             <div class={`${style.inboxTabs} grid grid-cols-6 gap-3`}>
-             <div className={`${style.inboxLink} lg:ml-8 md:ml-2 lg:relative lg:flex lg:flex-col left-0 gap-8 relative lg:w-full lg:bg-white md:bg-gradient-to-r md:from-blue-700 md:to-blue-500`}>
+             <div className={`${style.inboxLink} lg:ml-8 md:ml-2 lg:relative lg:flex lg:flex-col left-0 gap-8 relative lg:w-full `}>
                     <div class={`${style.menu} lg:col-span-1`}>
                         
                         <div className="flex gap-2 bg-[#4772E2] 2xl:text-[20px] lg:text-[15px] font-[400] mr-[2rem] text-center text-center items-center px-4 py-3 rounded-[5px] text-white transform hover:bg-blue-500 cursor-pointer">
@@ -161,9 +161,9 @@ const Email = ()=>{
                             </div>
                         </div>
                     </header>
-                    {/* <section id="email_messages">
+                    <section id="email_messages">
                         <EmailInbox />
-                    </section> */}
+                    </section>
                 </div>
                 <div class={`${style.scheduleTab} lg:col-span-1 lg:flex lg:flex-col sm:hidden gap-3 h-full`}>
                     <div className={`${style.scheduleIcons}  lg:flex lg:flex-row md:flex md:flex-col lg:gap-3 md:gap-2 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white`}>

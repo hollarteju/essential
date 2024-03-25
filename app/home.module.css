@@ -34,7 +34,7 @@
 }
 
 .footer span{
-    z-index: 1000 !important;
+    z-index: 500 !important;
 }
 
 .mobile{
@@ -224,6 +224,9 @@
         background-image: none !important;
         background:linear-gradient(#103db9, #3b82f6) !important;
         width: 100%;
+    }
+    .footer span{
+        color: white;
     }
 }
 @media(max-width:884px){
