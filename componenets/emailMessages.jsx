@@ -10,7 +10,7 @@ import { FaClock } from "react-icons/fa6";
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 
 
-export default function EmailMessages(){
+export default function EmailInbox(){
     const [names, setNames] = useState([]);
     const [messages, setMessages] = useState([]);
    

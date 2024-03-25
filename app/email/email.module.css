@@ -102,6 +102,9 @@
         width: 15px;
         height: 15px;
     }
+    .menu{
+        color: white;
+    }
     .logoLayer,
     .profilePics{
         display:none
@@ -109,14 +112,24 @@
     .scheduleTab{
         display:none
     }
-}
-
-@media(max-width:500px){
-    .menu{
-        width: 50%;
+    .inboxLink{
+        position:absolute;
+        top:4rem;
+        left:0px;
+        width: 40%;
+        padding-block: 1rem;
+        background:linear-gradient(#103db9, #3b82f6);
     }
     .cog{
         display:flex
+
     }
+}
+
+@media(max-width:500px){
+    .inboxLink{
+        width: 70%;
+    }
+    
 
 }

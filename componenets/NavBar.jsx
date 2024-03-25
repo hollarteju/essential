@@ -14,7 +14,7 @@ export default function NavBar(){
             <TiThMenu size="28px"/>
         </div>
         <div className={`${style.linksContainer} items-center lg:w-full py-6 flex lg:justify-between`}>
-                <ul className={`${style.links} w-[425px] font-semibold text-white relative text-[16] lg:flex gap-[9rem] text-center`}>
+                <ul className={`${style.links} w-[425px] font-semibold lg:text-white md:text-black relative text-[16] lg:flex gap-[9rem] text-center`}>
                     <li className='cursor-pointer'><Link href="#">About us</Link></li>
                     <li className='cursor-pointer'><Link href="#">Support</Link></li>
                     <li className='cursor-pointer'><Link href="#">Other Services</Link></li>

@@ -69,9 +69,10 @@
         text-align: right;
         align-items: right;
         position: absolute;
-        right: 1rem;
-        top: 1.2rem;
-        display: none;
+        right: 0rem;
+        top: 4rem;
+        background:linear-gradient(white, gray);
+        width: 40%;
     }
 
     .container{
@@ -98,8 +99,7 @@
         position: absolute;
         top: 1.8rem;
         right: 1rem;
-        color: #B80C09;
-        border: 1px solid white;
+        color: white;
         cursor: pointer;
     }
     .container{

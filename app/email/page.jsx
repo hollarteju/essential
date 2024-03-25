@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./email.module.css";
-import EmailMessages from "../../componenets/emailMessages";
-import Inbox from "./inbox/page";
+import EmailInbox from "../../componenets/emailMessages";
 import CalendarPage from "../../componenets/calendar";
 import Image from "next/image";
 import {group_btns_one, group_btns_two, group_btns_three} from "../items"
@@ -29,7 +28,7 @@ const Email = ()=>{
    
     return(
         <div class={`${style.inboxContainer} relative `}>
-            {/* <div class={`${style.navBar}gap-[5rem] flex justify-between items-center lg:pl-[5%] lg:pr-[2%] md:pl-[0%] md:pr-[0%] text-center py-4`}>
+            <div class={`${style.navBar}gap-[5rem] flex justify-between items-center lg:pl-[5%] lg:pr-[2%] md:pl-[0%] md:pr-[0%] text-center py-4`}>
                 <div className="lg:hidden md:flex md:flex-col">
                     <div className=" flex justify-between items-center text-center px-2 bg-gradient-to-r from-blue-700 to-blue-500">
                         <div className="w-[25px] items-center text-center">
@@ -62,13 +61,11 @@ const Email = ()=>{
                         <Image className={`${style.image} rounded-[50%]`} src="/image/user.png" width={50} height={50} alt="profile image" />
                     </div>
                 </div>
-            </div> */}
+            </div>
             <div class={`${style.inboxTabs} grid grid-cols-6 gap-3`}>
-                {/* <div className="lg:ml-8 md:ml-2 lg:relative lg:flex lg:flex-col md:absolute lg:top-[0rem] md:top-[3rem] left-0 gap-8 relative lg:w-full">
+             <div className={`${style.inboxLink} lg:ml-8 md:ml-2 lg:relative lg:flex lg:flex-col left-0 gap-8 relative lg:w-full lg:bg-white md:bg-gradient-to-r md:from-blue-700 md:to-blue-500`}>
                     <div class={`${style.menu} lg:col-span-1`}>
-                        <div class={`lg:hidden md:flex px-4 py-3`}>
-                        <p className="text-blue-500 font-[400] text-[15px]">ESSENTIAL <span class="text-black">NG</span></p>
-                        </div>
+                        
                         <div className="flex gap-2 bg-[#4772E2] 2xl:text-[20px] lg:text-[15px] font-[400] mr-[2rem] text-center text-center items-center px-4 py-3 rounded-[5px] text-white transform hover:bg-blue-500 cursor-pointer">
                             <i className="2xl:w-[20px] 2xl:h-[20px] lg:w-[15px] lg:h-[15px]"><HiPencilAlt size="100%" /></i>
                             <p>Compose</p>
@@ -99,12 +96,12 @@ const Email = ()=>{
                         </div>
                         <div>
                             <div className={`${style.cog} lg:hidden md:flex gap-2 text-center items-center font-[400] px-4 py-3 transform hover:scale-110 cursor-pointer`}>
-                                <i className="lg:w-[20px] lg:h-[20px]"><FaCog  size="100%"/></i>
+                                <i className="w-[20px] h-[20px]"><FaCog  size="100%"/></i>
                                 <p>Setting</p>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </div>
                 
                 <div class="lg:col-span-4 px-2 w-full h-[100vh] overflow-scroll pb-[6rem]">
                     <header class={`${style.header}`}>
@@ -164,9 +161,9 @@ const Email = ()=>{
                             </div>
                         </div>
                     </header>
-                    <section id="email_messages">
-                        <Inbox />
-                    </section>
+                    {/* <section id="email_messages">
+                        <EmailInbox />
+                    </section> */}
                 </div>
                 <div class={`${style.scheduleTab} lg:col-span-1 lg:flex lg:flex-col sm:hidden gap-3 h-full`}>
                     <div className={`${style.scheduleIcons}  lg:flex lg:flex-row md:flex md:flex-col lg:gap-3 md:gap-2 bg-[#4772E2] text-[20px] font-[400] justify-center text-center items-center px-4 py-3 rounded-[5px] text-white`}>

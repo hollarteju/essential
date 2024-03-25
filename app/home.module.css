@@ -220,6 +220,11 @@
     .aboutTxt{
         width: 190px;
     }
+    .headline{
+        background-image: none !important;
+        background:linear-gradient(#103db9, #3b82f6) !important;
+        width: 100%;
+    }
 }
 @media(max-width:884px){
     .serviceCard{

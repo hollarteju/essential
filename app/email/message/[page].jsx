@@ -1,12 +1,12 @@
 import React from 'react';
-import style from "./inbox.module.css";
+import style from "./message.module.css";
 import Image from 'next/image';
 import { CgArrowsExpandRight } from 'react-icons/cg';
 import { PiArrowBendDoubleUpRight } from 'react-icons/pi';
 import { FiPrinter } from 'react-icons/fi';
 import { FaArrowLeft } from "react-icons/fa6";
 
-const Inbox =()=>{
+const Message =()=>{
     return(
         <div className="w-full">
             <nav className='lg:hidden fixed px-3 w-full z-50 left-0 py-[20px] bg-gradient-to-r from-blue-700 to-blue-500'>
@@ -64,4 +64,4 @@ const Inbox =()=>{
     )
 };
 
-export default Inbox;
+export default Message;
